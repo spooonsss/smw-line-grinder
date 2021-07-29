@@ -167,6 +167,8 @@ NoSound:		;
 
 JSR GrinderGFX	; draw the sprite
 JSL $01A7DC	; interact with the player
+BCC LineGuideHandlerMainRt
+JSL $00F5B7	; hurt the player
 ; progress directly to the line-guided sprite handler routine
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
